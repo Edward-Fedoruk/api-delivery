@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attribute_categories",
+  "info": {
+    "name": "attributeCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attributes",
+  "info": {
+    "name": "Attribute"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "attribute_category": {
+      "model": "attribute-category"
+    }
+  }
+}

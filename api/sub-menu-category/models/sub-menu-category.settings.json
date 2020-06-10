@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_menu_categories",
+  "info": {
+    "name": "subMenuCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
