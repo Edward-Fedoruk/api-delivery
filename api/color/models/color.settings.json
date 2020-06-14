@@ -1,22 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "attributes",
+  "collectionName": "colors",
   "info": {
-    "name": "Attribute"
+    "name": "Color"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
     "name": {
       "type": "string"
     },
-    "category": {
-      "model": "attribute-category"
+    "slug": {
+      "type": "uid"
     }
   }
 }

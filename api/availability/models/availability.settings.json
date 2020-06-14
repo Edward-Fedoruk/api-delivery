@@ -1,22 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "attributes",
+  "collectionName": "availabilities",
   "info": {
-    "name": "Attribute"
+    "name": "availability"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
-    "name": {
+    "availability": {
       "type": "string"
     },
-    "category": {
-      "model": "attribute-category"
+    "slug": {
+      "type": "uid"
     }
   }
 }

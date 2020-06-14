@@ -1,22 +1,19 @@
 {
   "kind": "collectionType",
-  "collectionName": "attributes",
+  "collectionName": "bages",
   "info": {
-    "name": "Attribute"
+    "name": "bage"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "slug": {
-      "type": "uid"
-    },
     "name": {
       "type": "string"
     },
-    "category": {
-      "model": "attribute-category"
+    "slug": {
+      "type": "uid"
     }
   }
 }

@@ -30,9 +30,20 @@ const parseNumber = (str, defaultNum) => {
   return num;
 }
 
+const replaceKeyName = (field, replacer, object) => {
+  const newObj = {...object};
+  const fieldData = newObj[field];
+
+  delete newObj[field];
+  newObj[replacer] = fieldData
+
+  return newObj
+}
+
 module.exports = {
   generateDepthArray,
   getModelByNesting,
   parseNumber,
+  replaceKeyName,
 }
 

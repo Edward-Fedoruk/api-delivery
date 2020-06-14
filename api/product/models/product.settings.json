@@ -35,26 +35,20 @@
     "reviews": {
       "type": "integer"
     },
-    "brand": {
-      "type": "string"
-    },
     "categories": {
       "collection": "sub-menu-category"
     },
-    "badges": {
-      "type": "enumeration",
-      "enum": [
-        "new",
-        "hot",
-        "sale"
-      ]
+    "brand": {
+      "model": "brand"
     },
     "availability": {
-      "type": "enumeration",
-      "enum": [
-        "in_stock",
-        "not_in_stock"
-      ]
+      "model": "availability"
+    },
+    "bages": {
+      "collection": "bage"
+    },
+    "colors": {
+      "collection": "color"
     },
     "product_attributes": {
       "collection": "attribute"

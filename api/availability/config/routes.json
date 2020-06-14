@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/availabilities",
+      "handler": "availability.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/availabilities/count",
+      "handler": "availability.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/availabilities/:id",
+      "handler": "availability.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/availabilities",
+      "handler": "availability.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/availabilities/:id",
+      "handler": "availability.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/availabilities/:id",
+      "handler": "availability.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
