@@ -111,8 +111,8 @@ module.exports = {
             slug_eq: ctx.params.slug
         });
 
-        const categories = product.categories.map(category => category.slug);
-
+        const categories = product.categories ? product.categories.map(category => category.slug) : [];
+        
         return (await strapi.query('product').find({
             slug_ne: product.slug,
             _limit: parseNumber(_limit, 8),
